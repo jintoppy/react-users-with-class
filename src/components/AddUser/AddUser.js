@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import withMountMsg from '../../WithMountMsg';
 import './AddUser.css';
 
 class AddUser extends Component {
@@ -57,4 +58,4 @@ AddUser.propTypes = {
     addUser: PropTypes.func
 };
 
-export default AddUser;
+export default withMountMsg(AddUser, 'AddUser');
